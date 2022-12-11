@@ -1,0 +1,19 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "type": "module",
+  "scripts": {
+    "compile": "sass sass/main.scss style.css -w",
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.22.5",
+    "parcel": "^2.0.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.51.0"
+  }
+}

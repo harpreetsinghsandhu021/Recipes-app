@@ -1,0 +1,125 @@
+// $color-primary: #f59a83;
+$color-primary: #f38e82;
+$color-grad-1: #fbdb89;
+$color-grad-2: #f48982;
+
+$color-grey-light-1: #f9f5f3; // Light background
+$color-grey-light-2: #f2efee; // Light lines
+$color-grey-light-3: #d3c7c3; // Light text (placeholder)
+$color-grey-dark-1: #615551; // Normal text
+$color-grey-dark-2: #918581; // Lighter text
+
+$gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
+$color-darkBlue: #475569;
+$color-lightBlue: #94a3b8;
+$color-Blue: #dee3ea;
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  // height: 120vh;
+
+  background-color: #94a3b8;
+  color: #fff;
+}
+.container {
+  background-color: #475569;
+  border-radius: 4rem;
+  margin: 10vh auto;
+  min-height: 90rem;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  header {
+    .form {
+    }
+    // background-color: #475569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 20rem;
+
+    .burger {
+      margin-right: 3.4rem;
+
+      transform: translateY(3px);
+      .line {
+        background-color: #fff;
+        height: 2px;
+        margin-bottom: 0.8rem;
+        &1 {
+          width: 3rem;
+        }
+        &2 {
+          width: 2rem;
+        }
+        &3 {
+          width: 1rem;
+        }
+      }
+    }
+    .logo {
+      font-size: 2.6rem;
+      color: #fff;
+      font-weight: 500;
+      margin-right: 7rem;
+    }
+    .input {
+      height: 5rem;
+      width: 40rem;
+      outline: none;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      font-size: 1.8rem;
+      color: #000;
+      padding-left: 1rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .recipes-board {
+    flex: 1;
+    display: flex;
+    .one-recipe-board {
+      border-radius: 4rem;
+      display: flex;
+      h4 {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+      }
+      flex: 0.7;
+      background-color: #475569;
+    }
+    .all-recipe-board {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      background-color: #fff;
+      width: 30%;
+      height: 97%;
+      border-radius: 4rem;
+      overflow: hidden;
+      padding: 1rem 0;
+    }
+  }
+}

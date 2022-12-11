@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="src/img/logo.jpg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" defer src="src/js/controller.js"></script>
+
+    <title>Recipes // Search over 1,000,000 recipes</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+        <h1 class="logo">Recipes.</h1>
+        <form class="form">
+          <input type="text" class="input" />
+        </form>
+      </header>
+      <div class="recipes-board">
+        <div class="one-recipe-board">
+          <h4 class="demo-text">Search for Recipes</h4>
+        </div>
+        <div class="all-recipe-board">
+          <ul class="results"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+span {
+  display: block;
+}
+
+.recipe {
+  padding: 2rem 9rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: flex-start;
+  .recipe__title {
+    position: relative;
+    z-index: 8;
+
+    .main-span {
+      margin-bottom: 1rem;
+      letter-spacing: 0.3rem;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: gold;
+    }
+    .title-span {
+      font-size: 3.8rem;
+      width: 70%;
+    }
+  }
+  .publisher__title {
+    .main-span {
+      margin-bottom: 1rem;
+      letter-spacing: 0.3rem;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: gold;
+    }
+    .publisher-span {
+      font-size: 2rem;
+    }
+  }
+
+  .method {
+    .ing-list {
+      display: flex;
+    }
+  }
+  .recipe__img {
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+    height: 20rem;
+    width: 34rem;
+    border-radius: 2rem;
+    z-index: 5;
+    transform: skewY(-7deg);
+  }
+  // INGREDIENTS
+  &__ingredients {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  .heading--2 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+
+    text-transform: uppercase;
+    color: gold;
+  }
+  &__ingredient-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 4rem;
+    list-style: none;
+  }
+
+  &__ingredient {
+    display: flex;
+  }
+
+  .source-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  .method-span {
+    margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gold;
+  }
+  .source {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: gold;
+    padding: 1.2rem 3.6rem;
+    border-radius: 2rem;
+    margin-left: -1rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: hsl(51, 40%, 55%);
+    }
+  }
+}
+
+.svg--icons {
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  border-radius: 1rem;
+
+  .svg {
+    fill: #f3f4f6;
+
+    height: 3rem;
+    width: 4rem;
+  }
+}
